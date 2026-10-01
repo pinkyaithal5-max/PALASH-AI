@@ -71,7 +71,7 @@ async function translateText(){
  if(!v){output.textContent='Enter a Hindi phrase first.';return}
  const local=datasetLookup(v)||demo[v];
  if(local){output.textContent=local;toast('Local dataset match found');return}
- const key=document.getElementById('apiKey').value.trim();
+ const key=document.getElementById('AQ.Ab8RN6IXXiAGHvAA_2GI8oO9gVOfau4cZ7jmYHlYgIhWNlPThw').value.trim();
  if(!key){output.textContent='This phrase is not in the local pack. Enter a Gemini API key above to request an online translation.';toast('API key needed for new phrases');return}
  btn.disabled=true;btn.textContent='Translating…';output.textContent='Requesting an online Hindi → Santhali translation…';
  try{
